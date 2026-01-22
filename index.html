@@ -7,22 +7,60 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Marquee Banner -->
+  <div class="marquee">
+    <div class="marquee__inner">
+      🔥 HAI NGOC SNEAKER STORE – PREMIUM SHOES, PREMIUM STYLE – FREE SHIPPING 🔥
+      &nbsp;&nbsp;&nbsp;
+      🔥 HAI NGOC SNEAKER STORE – PREMIUM SHOES, PREMIUM STYLE – FREE SHIPPING 🔥
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
         <div class="logo">NIKE</div>
-        <nav class="nav">
+        
+        <!-- Hamburger Menu Button (Mobile) -->
+        <button class="header__hamburger" id="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav class="nav" id="navMenu">
           <a href="#" class="nav__link">Giới Thiệu</a>
           <a href="#products" class="nav__link">Sản Phẩm</a>
           <a href="#" class="nav__link">Hỗ Trợ</a>
           <a href="#" class="nav__link">Liên Hệ</a>
         </nav>
+
+        <!-- Header Actions -->
         <div class="header__actions">
-          <button class="icon-btn">🔍</button>
-          <button class="icon-btn">👤</button>
-          <button class="icon-btn">🛒</button>
+          <button class="icon-btn" title="Tìm kiếm">🔍</button>
+          <button class="icon-btn" title="Tài khoản">👤</button>
+          <!-- Cart Button with Counter -->
+          <button class="icon-btn header__cart-btn" id="cartBtn" title="Giỏ hàng">
+            🛒
+            <span class="cart__badge" id="cartBadge">0</span>
+          </button>
         </div>
+      </div>
+    </div>
+
+    <!-- Cart Dropdown -->
+    <div class="cart__dropdown" id="cartDropdown">
+      <div class="cart__header">
+        <h3>Giỏ Hàng</h3>
+        <button class="cart__close" id="cartClose">&times;</button>
+      </div>
+      <div class="cart__items" id="cartItems">
+        <p class="cart__empty">Giỏ hàng trống</p>
+      </div>
+      <div class="cart__footer">
+        <button class="btn btn--primary" id="checkoutBtn">Thanh Toán</button>
       </div>
     </div>
   </header>
@@ -31,8 +69,8 @@
   <section class="hero">
     <div class="hero__wrapper">
       <h1 class="hero__title">CÓ CÔNG THÀNH DANH</h1>
-      <p class="hero__subtitle">Khám phá bộ sưu tập giày Nike mới nhất</p>
-      <button class="btn btn--primary">Mua Ngay</button>
+      <p class="hero__subtitle">Khám phá bộ sưu tập giày Nike mới nhất từ Hải Ngọc Sneaker Store</p>
+      <button class="btn btn--primary btn--large">Shop Now</button>
     </div>
   </section>
 
@@ -62,7 +100,10 @@
               <span class="product__price-old">2,999,000 đ</span>
               <span class="product__price">2,399,000 đ</span>
             </div>
-            <button class="btn btn--card" data-product-id="1">Xem Chi Tiết</button>
+            <div class="product__actions">
+              <button class="btn btn--card btn--secondary" data-product-id="1">Xem Chi Tiết</button>
+              <button class="btn btn--card btn--add-cart" data-product-id="1" data-name="Nike Air Max 90" data-price="2399000">Thêm Giỏ</button>
+            </div>
           </div>
         </article>
 
@@ -81,7 +122,10 @@
             <div class="product__prices">
               <span class="product__price">1,899,000 đ</span>
             </div>
-            <button class="btn btn--card" data-product-id="2">Xem Chi Tiết</button>
+            <div class="product__actions">
+              <button class="btn btn--card btn--secondary" data-product-id="2">Xem Chi Tiết</button>
+              <button class="btn btn--card btn--add-cart" data-product-id="2" data-name="Nike Cortez Classic" data-price="1899000">Thêm Giỏ</button>
+            </div>
           </div>
         </article>
 
@@ -101,7 +145,10 @@
             <div class="product__prices">
               <span class="product__price">1,299,000 đ</span>
             </div>
-            <button class="btn btn--card" data-product-id="3">Xem Chi Tiết</button>
+            <div class="product__actions">
+              <button class="btn btn--card btn--secondary" data-product-id="3">Xem Chi Tiết</button>
+              <button class="btn btn--card btn--add-cart" data-product-id="3" data-name="Nike Revolution 7" data-price="1299000">Thêm Giỏ</button>
+            </div>
           </div>
         </article>
 
@@ -120,7 +167,10 @@
             <div class="product__prices">
               <span class="product__price">2,199,000 đ</span>
             </div>
-            <button class="btn btn--card" data-product-id="4">Xem Chi Tiết</button>
+            <div class="product__actions">
+              <button class="btn btn--card btn--secondary" data-product-id="4">Xem Chi Tiết</button>
+              <button class="btn btn--card btn--add-cart" data-product-id="4" data-name="Nike Blazer Mid" data-price="2199000">Thêm Giỏ</button>
+            </div>
           </div>
         </article>
 
@@ -141,7 +191,10 @@
               <span class="product__price-old">2,699,000 đ</span>
               <span class="product__price">2,299,000 đ</span>
             </div>
-            <button class="btn btn--card" data-product-id="5">Xem Chi Tiết</button>
+            <div class="product__actions">
+              <button class="btn btn--card btn--secondary" data-product-id="5">Xem Chi Tiết</button>
+              <button class="btn btn--card btn--add-cart" data-product-id="5" data-name="Nike Dunk Low" data-price="2299000">Thêm Giỏ</button>
+            </div>
           </div>
         </article>
 
@@ -160,7 +213,10 @@
             <div class="product__prices">
               <span class="product__price">1,699,000 đ</span>
             </div>
-            <button class="btn btn--card" data-product-id="6">Xem Chi Tiết</button>
+            <div class="product__actions">
+              <button class="btn btn--card btn--secondary" data-product-id="6">Xem Chi Tiết</button>
+              <button class="btn btn--card btn--add-cart" data-product-id="6" data-name="Nike Court Legacy" data-price="1699000">Thêm Giỏ</button>
+            </div>
           </div>
         </article>
       </div>
