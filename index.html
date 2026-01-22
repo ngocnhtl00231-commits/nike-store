@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Store - Giày Thể Thao Chính Hãng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="logo">NIKE</div>
+        <nav class="nav">
+          <a href="#" class="nav__link">Giới Thiệu</a>
+          <a href="#products" class="nav__link">Sản Phẩm</a>
+          <a href="#" class="nav__link">Hỗ Trợ</a>
+          <a href="#" class="nav__link">Liên Hệ</a>
+        </nav>
+        <div class="header__actions">
+          <button class="icon-btn">🔍</button>
+          <button class="icon-btn">👤</button>
+          <button class="icon-btn">🛒</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero__wrapper">
+      <h1 class="hero__title">CÓ CÔNG THÀNH DANH</h1>
+      <p class="hero__subtitle">Khám phá bộ sưu tập giày Nike mới nhất</p>
+      <button class="btn btn--primary">Mua Ngay</button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <div class="products__header">
+        <h2 class="products__title">SẢN PHẨM NỔI BẬT</h2>
+        <p class="products__subtitle">Bộ sưu tập giày thể thao chất lượng cao</p>
+      </div>
+
+      <div class="products__grid">
+        <!-- Product 1 -->
+        <article class="product">
+          <div class="product__image">
+            <img src="images/nike1.png" alt="Nike Air Max 90" class="product__img">
+            <span class="product__badge product__badge--discount">-20%</span>
+          </div>
+          <div class="product__content">
+            <h3 class="product__name">Nike Air Max 90</h3>
+            <p class="product__category">Thể Thao | Nam</p>
+            <div class="product__rating">
+              <span class="product__stars">★★★★★</span>
+              <span class="product__reviews">(245)</span>
+            </div>
+            <div class="product__prices">
+              <span class="product__price-old">2,999,000 đ</span>
+              <span class="product__price">2,399,000 đ</span>
+            </div>
+            <button class="btn btn--card" data-product-id="1">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product">
+          <div class="product__image">
+            <img src="images/nike2.png" alt="Nike Cortez Classic" class="product__img">
+          </div>
+          <div class="product__content">
+            <h3 class="product__name">Nike Cortez Classic</h3>
+            <p class="product__category">Casual | Unisex</p>
+            <div class="product__rating">
+              <span class="product__stars">★★★★☆</span>
+              <span class="product__reviews">(189)</span>
+            </div>
+            <div class="product__prices">
+              <span class="product__price">1,899,000 đ</span>
+            </div>
+            <button class="btn btn--card" data-product-id="2">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product">
+          <div class="product__image">
+            <img src="images/nike3.png" alt="Nike Revolution 7" class="product__img">
+            <span class="product__badge product__badge--new">MỚI</span>
+          </div>
+          <div class="product__content">
+            <h3 class="product__name">Nike Revolution 7</h3>
+            <p class="product__category">Chạy Bộ | Nam/Nữ</p>
+            <div class="product__rating">
+              <span class="product__stars">★★★★★</span>
+              <span class="product__reviews">(312)</span>
+            </div>
+            <div class="product__prices">
+              <span class="product__price">1,299,000 đ</span>
+            </div>
+            <button class="btn btn--card" data-product-id="3">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product">
+          <div class="product__image">
+            <img src="images/nike4.png" alt="Nike Blazer Mid" class="product__img">
+          </div>
+          <div class="product__content">
+            <h3 class="product__name">Nike Blazer Mid</h3>
+            <p class="product__category">Lifestyle | Nam</p>
+            <div class="product__rating">
+              <span class="product__stars">★★★★★</span>
+              <span class="product__reviews">(156)</span>
+            </div>
+            <div class="product__prices">
+              <span class="product__price">2,199,000 đ</span>
+            </div>
+            <button class="btn btn--card" data-product-id="4">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product">
+          <div class="product__image">
+            <img src="images/nike5.png" alt="Nike Dunk Low" class="product__img">
+            <span class="product__badge product__badge--discount">-15%</span>
+          </div>
+          <div class="product__content">
+            <h3 class="product__name">Nike Dunk Low</h3>
+            <p class="product__category">Bóng Rổ | Unisex</p>
+            <div class="product__rating">
+              <span class="product__stars">★★★★★</span>
+              <span class="product__reviews">(428)</span>
+            </div>
+            <div class="product__prices">
+              <span class="product__price-old">2,699,000 đ</span>
+              <span class="product__price">2,299,000 đ</span>
+            </div>
+            <button class="btn btn--card" data-product-id="5">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product">
+          <div class="product__image">
+            <img src="images/nike6.png" alt="Nike Court Legacy" class="product__img">
+          </div>
+          <div class="product__content">
+            <h3 class="product__name">Nike Court Legacy</h3>
+            <p class="product__category">Casual | Nữ</p>
+            <div class="product__rating">
+              <span class="product__stars">★★★★☆</span>
+              <span class="product__reviews">(201)</span>
+            </div>
+            <div class="product__prices">
+              <span class="product__price">1,699,000 đ</span>
+            </div>
+            <button class="btn btn--card" data-product-id="6">Xem Chi Tiết</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature">
+          <div class="feature__icon">🚚</div>
+          <h3 class="feature__title">Giao Hàng Miễn Phí</h3>
+          <p class="feature__text">Với đơn hàng trên 500,000 đ</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🔄</div>
+          <h3 class="feature__title">Đổi Trả Dễ Dàng</h3>
+          <p class="feature__text">30 ngày đổi trả không phí</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">💳</div>
+          <h3 class="feature__title">Thanh Toán An Toàn</h3>
+          <p class="feature__text">Nhiều hình thức thanh toán</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">⭐</div>
+          <h3 class="feature__title">Hàng Chính Hãng</h3>
+          <p class="feature__text">100% sản phẩm gốc</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__title">VỀ NIKE</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Giới Thiệu</a></li>
+            <li><a href="#" class="footer__link">Liên Hệ</a></li>
+            <li><a href="#" class="footer__link">Tuyển Dụng</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">HỖ TRỢ</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Hướng Dẫn Mua Hàng</a></li>
+            <li><a href="#" class="footer__link">Chính Sách Đổi Trả</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">THEO DÕI</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Facebook</a></li>
+            <li><a href="#" class="footer__link">Instagram</a></li>
+            <li><a href="#" class="footer__link">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">LIÊN HỆ</h4>
+          <p class="footer__text">Email: support@nike-store.vn</p>
+          <p class="footer__text">Hotline: 1900 1000</p>
+          <p class="footer__text">Địa chỉ: 123 Đường Nike, Hà Nội</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Nike Store Vietnam | Dự Án Học Tập</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <div class="modal__body">
+        <div class="modal__image">
+          <img id="modalImage" src="" alt="" class="modal__img">
+        </div>
+        <div class="modal__info">
+          <h2 id="modalTitle" class="modal__title"></h2>
+          <p id="modalCategory" class="modal__category"></p>
+          <div id="modalRating" class="modal__rating"></div>
+          <div id="modalPrice" class="modal__price"></div>
+          <p id="modalDesc" class="modal__description"></p>
+          <button class="btn btn--primary" id="addToCart">Thêm Vào Giỏ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+        <!-- Product Card 1 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="images/nike5.png" alt="Nike Dunk Low" class="product-card__img">
+            <span class="badge badge--discount">-20%</span>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__name">Nike Air Max 90</h3>
+            <p class="product-card__category">Thể Thao | Nam</p>
+            <div class="product-card__rating">
+              <span class="rating">★★★★★</span>
+              <span class="rating__count">(245)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price price--old">2,999,000 đ</span>
+              <span class="price price--current">2,399,000 đ</span>
+            </div>
+            <button class="btn btn--secondary">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product Card 2 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="images/nike2.png" alt="Nike Cortez Classic" class="product-card__img">
+          </div>
+            <button class="btn btn--secondary" data-product-id="2">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product Card 3 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="images/nike3.png" alt="Nike Revolution 7" class="product-card__img">
+            <span class="badge badge--new">MỚI</span>
+          </div>
+            <button class="btn btn--secondary" data-product-id="3">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product Card 4 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="images/nike4.png" alt="Nike Blazer Mid" class="product-card__img">
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__name">Nike Blazer Mid</h3>
+            <p class="product-card__category">Lifestyle | Nam</p>
+            <div class="product-card__rating">
+              <span class="rating">★★★★★</span>
+              <span class="rating__count">(156)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price price--current">2,199,000 đ</span>
+            </div>
+            <button class="btn btn--secondary" data-product-id="4
+            <h3 class="product-card__name">Nike Dunk Low</h3>
+            <p class="product-card__category">Bóng Rổ | Unisex</p>
+            <div class="product-card__rating">
+              <span class="rating">★★★★★</span>
+              <span class="rating__count">(428)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="price price--old">2,699,000 đ</span>
+              <span class="price price--current">2,299,000 đ</span>
+            </div>
+            <button class="btn btn--secondary">Xem Chi Tiết</button>
+          </div>
+        </article>
+
+        <!-- Product Card 6 -->
+        <article class="product-card">
+          <div class="product-card__image">
+            <img src="images/nike6.png" alt="Nike Court Legacy" class="product-card__img">
+          </div>
+            <button class="btn btn--secondary" data-product-id="5
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-item__icon">🚚</div>
+          <h3 class="feature-item__title">Giao Hàng Miễn Phí</h3>
+          <p class="feature-item__description">Với đơn hàng trên 500,000 đ</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">🔄</div>
+          <h3 class="feature-item__title">Đổi Trả Dễ Dàng</h3>
+          <p class="feature-item__description">30 ngày đổi trả không phí</p>
+        </div>
+        <d  <button class="btn btn--secondary" data-product-id="6
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h4 class="footer__title">VỀ NIKE</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Giới Thiệu</a></li>
+            <li><a href="#" class="footer__link">Liên Hệ</a></li>
+            <li><a href="#" class="footer__link">Tuyển Dụng</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">HỖ TRỢ</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Hướng Dẫn Mua Hàng</a></li>
+            <li><a href="#" class="footer__link">Chính Sách Đổi Trả</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">THEO DÕI CHÚNG TÔI</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Facebook</a></li>
+            <li><a href="#" class="footer__link">Instagram</a></li>
+            <li><a href="#" class="footer__link">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">LIÊN HỆ</h4>
+          <p class="footer__text">Email: support@nike-store.vn</p>
+          <p class="footer__text">Hotline: 1900 1000</p>
+          <p class="footer__text">Địa chỉ: 123 Đường Nike, Hà Nội</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Nike Store Vietnam | Dự Án Học Tập - Không Bán Hàng Thực Tế</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>!-- Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal__content">
+      <button class="modal__close">&times;</button>
+      <div class="modal__body">
+        <div class="modal__image">
+          <img id="modalImage" src="" alt="" class="modal__img">
+        </div>
+        <div class="modal__info">
+          <h2 id="modalTitle" class="modal__title"></h2>
+          <p id="modalCategory" class="modal__category"></p>
+          <div id="modalRating" class="modal__rating"></div>
+          <div id="modalPrice" class="modal__price"></div>
+          <p id="modalDesc" class="modal__description"></p>
+          <button class="btn btn--primary" id="addToCart">Thêm Vào Giỏ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script

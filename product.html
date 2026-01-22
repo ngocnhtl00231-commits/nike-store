@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Sản Phẩm - Nike Store</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-detail {
+      padding: 40px 20px;
+    }
+
+    .product-detail__container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .product-detail__header {
+      margin-bottom: 32px;
+    }
+
+    .product-detail__back {
+      display: inline-block;
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: #667eea;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .product-detail__back:hover {
+      color: #764ba2;
+    }
+
+    .product-detail__layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .product-detail__image {
+      background: #f5f5f5;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+    }
+
+    .product-detail__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-detail__info h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .product-detail__category {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .product-detail__rating {
+      font-size: 16px;
+      color: #ffc107;
+      margin-bottom: 20px;
+    }
+
+    .product-detail__specs {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .product-detail__specs p {
+      margin-bottom: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .product-detail__specs strong {
+      color: #1a1a1a;
+    }
+
+    .product-detail__sizes {
+      margin-bottom: 20px;
+    }
+
+    .product-detail__sizes label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .size-options {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .size-options input[type="radio"] {
+      display: none;
+    }
+
+    .size-options label {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin: 0;
+    }
+
+    .size-options input[type="radio"]:checked + label {
+      background: #1a1a1a;
+      color: white;
+      border-color: #1a1a1a;
+    }
+
+    .size-options label:hover {
+      border-color: #1a1a1a;
+    }
+
+    .product-detail__actions {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .product-detail__actions button {
+      flex: 1;
+      padding: 14px 20px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+      border: none;
+      font-size: 14px;
+    }
+
+    .btn-buy {
+      background: #1a1a1a;
+      color: white;
+    }
+
+    .btn-buy:hover {
+      background: #333;
+    }
+
+    .btn-wishlist {
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    .btn-wishlist:hover {
+      background: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      .product-detail__layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .product-detail__image {
+        min-height: 300px;
+      }
+
+      .product-detail__info h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">NIKE</div>
+        <nav class="nav">
+          <a href="index.html" class="nav__link">Trang Chủ</a>
+          <a href="index.html#products" class="nav__link">Sản Phẩm</a>
+          <a href="#" class="nav__link">Hỗ Trợ</a>
+          <a href="#" class="nav__link">Liên Hệ</a>
+        </nav>
+        <div class="header__actions">
+          <button class="icon-btn">🔍</button>
+          <button class="icon-btn">👤</button>
+          <button class="icon-btn">🛒</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail -->
+  <section class="product-detail">
+    <div class="product-detail__container">
+      <a href="index.html" class="product-detail__back">← Quay Lại</a>
+
+      <div class="product-detail__header">
+        <h1>Chi Tiết Sản Phẩm</h1>
+      </div>
+
+      <div class="product-detail__layout">
+        <div class="product-detail__image">
+          <img src="images/nike1.png" alt="Nike Air Max 90">
+        </div>
+
+        <div class="product-detail__info">
+          <h1>Nike Air Max 90</h1>
+          <p class="product-detail__category">Thể Thao | Nam</p>
+          <div class="product-detail__rating">★★★★★ (245 đánh giá)</div>
+
+          <div class="product-detail__specs">
+            <p><strong>Giá:</strong> 2,399,000 đ <span style="text-decoration: line-through; color: #999;">(2,999,000 đ)</span></p>
+            <p><strong>Tình Trạng:</strong> Còn Hàng (15 đôi)</p>
+            <p><strong>Hãng:</strong> Nike</p>
+            <p><strong>Chất Liệu:</strong> Da tổng hợp, Lưới</p>
+            <p><strong>Màu Sắc:</strong> Đen, Trắng, Xám</p>
+          </div>
+
+          <div class="product-detail__sizes">
+            <label>Chọn Size:</label>
+            <div class="size-options">
+              <input type="radio" id="size-36" name="size" value="36">
+              <label for="size-36">36</label>
+
+              <input type="radio" id="size-37" name="size" value="37">
+              <label for="size-37">37</label>
+
+              <input type="radio" id="size-38" name="size" value="38">
+              <label for="size-38">38</label>
+
+              <input type="radio" id="size-39" name="size" value="39">
+              <label for="size-39">39</label>
+
+              <input type="radio" id="size-40" name="size" value="40" checked>
+              <label for="size-40">40</label>
+
+              <input type="radio" id="size-41" name="size" value="41">
+              <label for="size-41">41</label>
+
+              <input type="radio" id="size-42" name="size" value="42">
+              <label for="size-42">42</label>
+
+              <input type="radio" id="size-43" name="size" value="43">
+              <label for="size-43">43</label>
+            </div>
+          </div>
+
+          <div class="product-detail__actions">
+            <button class="btn-buy">Mua Ngay</button>
+            <button class="btn-wishlist">❤️ Yêu Thích</button>
+          </div>
+
+          <h3 style="margin-top: 24px; margin-bottom: 12px;">Mô Tả Chi Tiết</h3>
+          <p style="color: #666; line-height: 1.8; font-size: 14px;">
+            Nike Air Max 90 là một trong những mẫu giày thể thao iconic của Nike. Với công nghệ Air Max nổi bật ở gót chân, giày mang lại sự thoải mái tuyệt vời. Thiết kế thanh lịch, phù hợp cho cả thể thao lẫn thường ngày.
+            <br><br>
+            <strong>Đặc điểm:</strong>
+            <br>• Công nghệ Air Max thoải mái
+            <br>• Thiết kế hiện đại, thanh lịch
+            <br>• Chất liệu bền bỉ
+            <br>• Phù hợp cho nhiều hoạt động
+            <br>• Dễ kết hợp với nhiều trang phục
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h4 class="footer__title">VỀ NIKE</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Giới Thiệu</a></li>
+            <li><a href="#" class="footer__link">Liên Hệ</a></li>
+            <li><a href="#" class="footer__link">Tuyển Dụng</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">HỖ TRỢ</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Hướng Dẫn Mua Hàng</a></li>
+            <li><a href="#" class="footer__link">Chính Sách Đổi Trả</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">THEO DÕI CHÚNG TÔI</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Facebook</a></li>
+            <li><a href="#" class="footer__link">Instagram</a></li>
+            <li><a href="#" class="footer__link">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__title">LIÊN HỆ</h4>
+          <p class="footer__text">Email: support@nike-store.vn</p>
+          <p class="footer__text">Hotline: 1900 1000</p>
+          <p class="footer__text">Địa chỉ: 123 Đường Nike, Hà Nội</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Nike Store Vietnam | Dự Án Học Tập - Không Bán Hàng Thực Tế</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
