@@ -1,0 +1,8 @@
+theme: null
+plugins: []
+exclude: []
+include: [".nojekyll"]
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
